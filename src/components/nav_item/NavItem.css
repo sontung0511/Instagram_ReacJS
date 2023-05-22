@@ -1,0 +1,12 @@
+.NavItem {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-right: 0rem;
+  padding: 0rem;
+}
+.NavItem:hover {
+  background-color: #fafafa;
+  border-radius: 1.5rem;
+}
