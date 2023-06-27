@@ -5,10 +5,8 @@
   padding-left: 12px;
   display: flex;
   flex-direction: column;
-  
 }
-.grow{
-    
+.grow {
 }
 @media (min-width: 1264px) and (max-width: 1919px) {
   .sidebar {

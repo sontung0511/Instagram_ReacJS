@@ -10,8 +10,13 @@
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://react-bootstrap.github.io/">React Bootstrap</a></li>
     <li><a href="https://redux-toolkit.js.org/usage/usage-with-typescript">Redux Toolkit</a></li>
+<<<<<<< HEAD
     <li><a href="https://tailwindcss.com/">TaiwindCSS</a></li>
     <li><a href="https://reactrouter.com/en/main">React-router-dom</a></li>
+=======
+    <li><a href="https://redux-toolkit.js.org/usage/usage-with-typescript">TaiwindCSS</a></li>
+    <li><a href="https://redux-toolkit.js.org/usage/usage-with-typescript">React-router-dom</a></li>
+>>>>>>> 7254d80131df3be74e29c8c3fb0393628c855a87
   </ul>
 </details>
 
