@@ -1,6 +1,5 @@
-import React, { ReactNode } from 'react';
-import Sidebar from '../../Pages/Sidebar/Sidebar';
-
+import React, { ReactNode } from "react";
+import Sidebar from "../../Pages/Sidebar/Sidebar";
 
 interface Props {
   children: ReactNode;
@@ -9,12 +8,13 @@ interface Props {
 const DefaultLayout = ({ children }: Props) => {
   return (
     <div>
-      <div className=''>
-        <Sidebar/>
+      <div className="">
+        aaa
+        <Sidebar />
         <div>{children}</div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default DefaultLayout;

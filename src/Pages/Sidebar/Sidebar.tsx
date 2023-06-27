@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import logoImage from "../../components/images/ava.jpg";
 import "./Sidebar.css";
 import { InstagramLogo } from "../../components/images";
 import NavItem from "../../components/nav_item/NavItem";
@@ -21,6 +22,7 @@ import { IconSettingsActive } from "../../components/icon/Icon_More_active";
 import { CircleAvatarMenu } from "../../components/menu_avacircle/profile_circle";
 
 export default function Sidebar(): JSX.Element {
+  const ava_cir = logoImage;
   return (
     <div className="sidebar">
       <div
@@ -28,85 +30,91 @@ export default function Sidebar(): JSX.Element {
       >
         <InstagramLogo />
       </div>
+
       <div className="grow">
+        <div className={`px-[12px]`}>
+          <NavItem
+            icon={<IconHome />}
+            activeIcon={<IconHomeActive />}
+            title="Home"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={<IconSearch />}
+            activeIcon={<IconSearchActive />}
+            title="Search"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={<IconExplore />}
+            activeIcon={<IconExploreActive />}
+            title="Explore"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={<IconReels />}
+            activeIcon={<IconReelsActive />}
+            title="Reels"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={<IconMessage />}
+            activeIcon={<IconMessageActive />}
+            title="Message"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={<IconNofitication />}
+            activeIcon={<IconNofiticationActive />}
+            title="Nofitication"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={<IconCreate />}
+            activeIcon={<IconCreateActive />}
+            title="Create"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+          <NavItem
+            icon={
+              <CircleAvatarMenu
+                url={ava_cir}
+                size={24}
+                isActive={false}
+                onClick={() => console.log("aa")}
+              />
+            }
+            activeIcon={
+              <CircleAvatarMenu
+                url={ava_cir}
+                size={24}
+                isActive={false}
+                onClick={() => console.log("aa")}
+              />
+            }
+            title="Profile"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+        </div>
+      </div>
+
+      <div className={`mb-6 px-[12px]`}>
         <NavItem
-          icon={<IconHome />}
-          activeIcon={<IconHomeActive />}
-          title="Home"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={<IconSearch />}
-          activeIcon={<IconSearchActive />}
-          title="Search"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={<IconExplore />}
-          activeIcon={<IconExploreActive />}
-          title="Explore"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={<IconReels />}
-          activeIcon={<IconReelsActive />}
-          title="Reels"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={<IconMessage />}
-          activeIcon={<IconMessageActive />}
-          title="Message"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={<IconNofitication />}
-          activeIcon={<IconNofiticationActive />}
-          title="Nofitication"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={<IconCreate />}
-          activeIcon={<IconCreateActive />}
-          title="Create"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-        <NavItem
-          icon={
-            <CircleAvatarMenu
-              url={""}
-              size={24}
-              isActive={false}
-              onClick={() => console.log("aa")}
-            />
-          }
-          activeIcon={
-            <CircleAvatarMenu
-              url={""}
-              size={24}
-              isActive={false}
-              onClick={() => console.log("aa")}
-            />
-          }
-          title="Profile"
+          icon={<IconSettings />}
+          activeIcon={<IconSettingsActive />}
+          title="More"
           isActive={true}
           onClick={() => console.log("aa")}
         />
       </div>
-      <NavItem
-        icon={<IconSettings />}
-        activeIcon={<IconSettingsActive />}
-        title="More"
-        isActive={true}
-        onClick={() => console.log("aa")}
-      />
     </div>
   );
 }
