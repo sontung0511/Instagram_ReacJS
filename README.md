@@ -1,7 +1,6 @@
 
-
-  <h1>Type Shop </h1>
+  <h1>Instagram </h1>
   
   <p>
-    The best E-commerce store using Mern Stack with typescript
+    The social web Instagram with BA Instagram Nodejs
   </p>
