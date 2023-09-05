@@ -6,8 +6,7 @@
   display: flex;
   flex-direction: column;
 }
-.grow {
-}
+
 @media (min-width: 1264px) and (max-width: 1919px) {
   .sidebar {
     width: var(--nav-medium-width);

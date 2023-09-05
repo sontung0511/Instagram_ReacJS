@@ -5,7 +5,7 @@ export const CircleAvatarMenu = ({
   onClick,
 }: {
   url: string;
-  size: number;
+  size?: number;
   isActive: boolean;
   onClick: () => void;
 }): JSX.Element => {
