@@ -1,9 +1,8 @@
 .container_feed{
-    max-width: 470px;
-    margin-right: 32px;
+  
+    margin-right: 50px;
     
-    width: 500px;
-    height: 400px;
+
 }
 .suggestions{
     width: 300px;

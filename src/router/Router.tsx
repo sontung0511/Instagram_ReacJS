@@ -10,8 +10,6 @@ import Reels from "../Pages/Reels/Reels";
 import Profile from "../Pages/Profile/Profile";
 import Home from "../Pages/HomePage/Home";
 
-import Search from "../Pages/Search/search";
-
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="" element={<Root />}>
