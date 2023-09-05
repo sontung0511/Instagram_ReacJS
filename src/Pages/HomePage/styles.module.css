@@ -1,0 +1,11 @@
+.container_feed{
+    max-width: 470px;
+    margin-right: 32px;
+    
+    width: 500px;
+    height: 400px;
+}
+.suggestions{
+    width: 300px;
+    height: 300px;
+}
