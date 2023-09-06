@@ -14,6 +14,12 @@ import { IconCreate } from "./Icon_create";
 import { IconCreateActive } from "./Icon_create_active";
 import { IconSettings } from "./Icon_More";
 import { IconSettingsActive } from "./Icon_More_active";
+import { IconAdd } from "./Icon_add";
+import { IconAddActive } from "./Icon_add_active";
+import { IconHeart } from "./Icon_heart";
+import { IconComment } from "./Icon_comment";
+import { IconSent } from "./Icon_sent";
+import { IconSave } from "./Icon_save";
 export {
   IconHome,
   IconHomeActive,
@@ -31,4 +37,10 @@ export {
   IconCreateActive,
   IconSettings,
   IconSettingsActive,
+  IconAdd,
+  IconAddActive,
+  IconSent,
+  IconComment,
+  IconHeart,
+  IconSave,
 };
