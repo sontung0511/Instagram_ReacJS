@@ -30,7 +30,7 @@ export default function Sidebar({
 }): JSX.Element {
   const ava_cir = logoImage;
   return (
-    <div className="sidebar">
+    <div className="sidebar ">
       <div
         className={`cursor-pointer mb-2 mt-[20px] px-[12px] pt-[25px] pb-[16px] `}
       >

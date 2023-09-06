@@ -34,7 +34,7 @@ export default function UserStory(): JSX.Element {
   return (
     <div className="relative">
       <button
-        className="border absolute left-[116px] top-6    "
+        className="border rounded-full absolute left-[116px] top-6    "
         onClick={handleScrollLeft}
       >
         &lt;
@@ -65,7 +65,7 @@ export default function UserStory(): JSX.Element {
           })}
         </div>
         <button
-          className="border absolute top-6 right-0 "
+          className="rounded-full border absolute top-6 right-0 "
           onClick={handleScrollRight}
         >
           &gt;

@@ -17,6 +17,7 @@ export const CircleAvatarMenu = ({
         height: `${size}px`,
         border: isActive ? "2px solid #000" : "none",
       }}
+      alt=""
       onClick={onClick}
       className="rounded-full border-[1px]"
     />

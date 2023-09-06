@@ -17,7 +17,7 @@ export default function Root(): JSX.Element {
   );
 
   return (
-    <div className={`${Styles.layout}`}>
+    <div className={`${Styles.layout} `}>
       <Sidebar tabActive={tabActive} onClickTab={setTabActive} />
       <Content>
         <Outlet />
