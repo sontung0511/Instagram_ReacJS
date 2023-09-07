@@ -1,6 +1,6 @@
 .content {
   width: calc(100% - var(--nav-wide-width));
-
+  margin-left: auto;
 }
 
 @media (min-width: 1264px) and (max-width: 1919px) {

@@ -9,9 +9,9 @@ import { currentUser } from "../../components/data/CurrentUser";
 export default function Feeds({ post }: { post: UserFeeds }): JSX.Element {
   const userNameOfAuthor = StringUtils.displayUserName(post.user.userName);
   return (
-    <div className=" ml-[230px] mt-3 w-[470px] max-h-full ">
+    <div className=" ml-[160px] mt-4 rounded-lg w-[470px] max-h-full ">
       <div className="relative ">
-        <div className="flex items-center mt-2">
+        <div className="flex flex-row items-center mt-2">
           <Avastoryuser url={post.user.avatar} size={30} handlebefore={false} />
           <b className="text-[14px] flex flex-col grow mx-2  ml-[10px] normal-case align-middle ">
             {userNameOfAuthor}
@@ -28,9 +28,10 @@ export default function Feeds({ post }: { post: UserFeeds }): JSX.Element {
               src={imageUrl}
               key={index}
               alt=""
+              draggable={false}
             />
           ))}
-          <div className="flex mt-[12px]  relative">
+          <div className="flex flex-row  mt-[12px]  relative">
             <Icon_feeds />
           </div>
           {post.haveLike ? (
@@ -67,15 +68,17 @@ export default function Feeds({ post }: { post: UserFeeds }): JSX.Element {
           <p className="font-medium text-[12px] text-secondary-text mt-[-16px]">
             3h time
           </p>
-
-          <p className="text-[14px] font-semibold mt-[-16px]">see transation</p>
-
+          <p className="text-[14px] flex flex-row font-semibold mt-[-16px]">
+            see transation
+          </p>
           <div className="max-w-full  ">
-            <input
-              className="w-full text-[14px] focus-visible:outline-none"
-              type="text"
-              placeholder="add a comment....."
-            />
+            <div className="grow">
+              <input
+                className="w-full text-[14px] focus-visible:outline-none focus:border-transparent"
+                type="text"
+                placeholder="add a comment....."
+              />
+            </div>
           </div>
           <div className="border border-b-4 mt-4  border-slate-300"></div>
         </div>

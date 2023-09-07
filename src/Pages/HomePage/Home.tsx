@@ -11,13 +11,13 @@ import Styles from "./styles.module.css";
 export default function Home(): JSX.Element {
   return (
     <div className="relative">
-      <div className="flex  w-[820px]  ">
+      <div className="flex  max-w-[750px] mr-[32px] w-[100%]  ">
         <div className={` w-full `}>
           <UserStory />
         </div>
       </div>
       <div
-        className={`${Styles.suggestions} absolute inset-y-0 right-0 w-16 mt-14 mr-[64px] bg-zinc-400`}
+        className={`${Styles.suggestions} absolute inset-y-0 right-0 w-16 mt-14  bg-zinc-400`}
       >
         right
       </div>

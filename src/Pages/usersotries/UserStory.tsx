@@ -39,7 +39,7 @@ export default function UserStory(): JSX.Element {
       >
         &lt;
       </button>
-      <div className="  mt-14  whitespace-nowrap overflow-hidden ml-[130px]  ">
+      <div className="  mt-14  whitespace-nowrap overflow-x-hidden ml-[55px]  ">
         <div className="" {...events} ref={ref}>
           {ListStories.map((e, index) => {
             return (
@@ -50,7 +50,7 @@ export default function UserStory(): JSX.Element {
                 <div className="flex flex-col justify-center items-center">
                   <Avastoryuser
                     url={e.avatar}
-                    size={55}
+                    size={51}
                     handlebefore={e.haveSeenBefore}
                   />
                   <p
@@ -65,7 +65,7 @@ export default function UserStory(): JSX.Element {
           })}
         </div>
         <button
-          className="rounded-full border absolute top-6 right-0 "
+          className="rounded-full border absolute top-6 right-[76px] "
           onClick={handleScrollRight}
         >
           &gt;

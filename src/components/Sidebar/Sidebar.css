@@ -1,4 +1,6 @@
 .sidebar {
+  position: fixed;
+  
   width: var(--nav-wide-width);
   max-height: 100vh;
   border-right: 1px solid rgba(219, 219, 219, 219);

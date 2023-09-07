@@ -21,7 +21,7 @@ import { IconSettings } from "../icon/Icon_More";
 import { IconSettingsActive } from "../icon/Icon_More_active";
 import { CircleAvatarMenu } from "../menu_avacircle/profile_circle";
 import { useState } from "react";
-import Search from "../../Pages/Search/search";
+
 import { IconInstagram } from "../icon/Icon_instagram";
 
 export default function Sidebar({
@@ -40,17 +40,15 @@ export default function Sidebar({
   return (
     <>
       <div className={`sidebar   ${collapsed ? "collapsed" : ""}`}>
-        <div
-          className={`cursor-pointer mb-2 mt-[20px] px-[12px] pt-[25px] pb-[16px] `}
-        >
+        <div className={`cursor-pointer mb-2 mt-[20px] px-3 pt-5 pb-4 `}>
           <InstagramLogo />
         </div>
         <div
-          className={`show_icon_logo cursor-pointer mb-2 mt-[20px] px-[12px] pt-[25px] pb-[16px]`}
+          className={`show_icon_logo cursor-pointer mb-2 mt-[20px] px-[12px] pt-5 pb-[16px]`}
         >
           <IconInstagram />
         </div>
-        <div className={`grow `}>
+        <div className={`grow mb-[90px] `}>
           <NavItem
             icon={<IconHome />}
             activeIcon={<IconHomeActive />}
@@ -86,13 +84,15 @@ export default function Sidebar({
             isActive={true}
             onClick={() => console.log("aa")}
           />
-          <NavItem
-            icon={<IconNofitication />}
-            activeIcon={<IconNofiticationActive />}
-            title="Nofitication"
-            isActive={true}
-            onClick={() => console.log("aa")}
-          />
+          <div>
+            <NavItem
+              icon={<IconNofitication />}
+              activeIcon={<IconNofiticationActive />}
+              title="Nofitication"
+              isActive={true}
+              onClick={() => console.log("aa")}
+            />
+          </div>
           <NavItem
             icon={<IconCreate />}
             activeIcon={<IconCreateActive />}
@@ -122,7 +122,7 @@ export default function Sidebar({
             onClick={() => onClickTab("profile")}
           />
         </div>
-        <div className="mb-6">
+        <div className="">
           <NavItem
             icon={<IconSettings />}
             activeIcon={<IconSettingsActive />}
