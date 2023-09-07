@@ -58,15 +58,17 @@ export default function Feeds({ post }: { post: UserFeeds }): JSX.Element {
             <span>{post.caption}</span>
           </div>
           {/* total comment*/}
-          <div className="my-2 font-medium text-[14px] text-secondary-text">
+          <div className="my-2 font-medium text-[14px]  text-secondary-text">
             <p>
               view all {StringUtils.formatNumber(post.totalcomment)} comment
             </p>
           </div>
-          <div className="my-2 mt-1 font-medium text-[12px] text-secondary-text">
-            <p>3h time</p>
-          </div>
-          <b className="text-[14px]">see transation</b>
+
+          <p className="font-medium text-[12px] text-secondary-text mt-[-16px]">
+            3h time
+          </p>
+
+          <p className="text-[14px] font-semibold mt-[-16px]">see transation</p>
 
           <div className="max-w-full  ">
             <input

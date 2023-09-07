@@ -15,7 +15,7 @@ export default function NavItem({
   onClick: () => void;
 }): JSX.Element {
   return (
-    <div className="NavItem" onClick={onClick}>
+    <div className="NavItem pl-[0.75rem]" onClick={onClick}>
       {isActive ? activeIcon : icon}
       <p
         className={`text-base pl-4`}

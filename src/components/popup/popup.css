@@ -1,19 +1,18 @@
 .sidebar {
   width: var(--nav-wide-width);
-  max-height: 100vh;
+  max-height: 120vh;
   border-right: 1px solid rgba(219, 219, 219, 219);
   padding-left: 12px;
   display: flex;
   flex-direction: column;
-  
+  position: sticky;
+  top: 0;
+  overflow-y: auto;
+
 }
+
 @media (min-width: 1264px) and (max-width: 1919px) {
   .sidebar {
     width: var(--nav-medium-width);
   }
 }
-.show_icon_logo{
-  display: none ;
-}
-
-

@@ -47,4 +47,5 @@ export const ListFeeds: UserFeeds[] = [
     totallike: 1000,
     totalcomment: 1000,
   },
+  
 ];

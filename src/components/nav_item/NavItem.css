@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: row;
   cursor: pointer;
-  margin-top: 1rem;
-  margin-right: 0rem;
-  padding: 0rem;
+ margin-top: 1rem;
+ margin-right: 0.75rem;
+ 
 }
 .NavItem:hover {
   background-color: #fafafa;
-  border-radius: 1.5rem;
+  border-radius: 1.75rem;
 }

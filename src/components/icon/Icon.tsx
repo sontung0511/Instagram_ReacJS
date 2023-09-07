@@ -20,6 +20,7 @@ import { IconHeart } from "./Icon_heart";
 import { IconComment } from "./Icon_comment";
 import { IconSent } from "./Icon_sent";
 import { IconSave } from "./Icon_save";
+import { IconInstagram } from "./Icon_instagram";
 export {
   IconHome,
   IconHomeActive,
@@ -43,4 +44,5 @@ export {
   IconComment,
   IconHeart,
   IconSave,
+  IconInstagram,
 };

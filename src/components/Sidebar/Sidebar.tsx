@@ -20,6 +20,9 @@ import { IconCreateActive } from "../icon/Icon_create_active";
 import { IconSettings } from "../icon/Icon_More";
 import { IconSettingsActive } from "../icon/Icon_More_active";
 import { CircleAvatarMenu } from "../menu_avacircle/profile_circle";
+import { useState } from "react";
+import Search from "../../Pages/Search/search";
+import { IconInstagram } from "../icon/Icon_instagram";
 
 export default function Sidebar({
   tabActive,
@@ -29,16 +32,25 @@ export default function Sidebar({
   onClickTab: (s: string) => void;
 }): JSX.Element {
   const ava_cir = logoImage;
-  return (
-    <div className="sidebar ">
-      <div
-        className={`cursor-pointer mb-2 mt-[20px] px-[12px] pt-[25px] pb-[16px] `}
-      >
-        <InstagramLogo />
-      </div>
+  const [collapsed, setCollapsed] = useState(false);
 
-      <div className="grow ">
-        <div className={`px-[12px]`}>
+  const toggleSidebar = () => {
+    setCollapsed(!collapsed);
+  };
+  return (
+    <>
+      <div className={`sidebar   ${collapsed ? "collapsed" : ""}`}>
+        <div
+          className={`cursor-pointer mb-2 mt-[20px] px-[12px] pt-[25px] pb-[16px] `}
+        >
+          <InstagramLogo />
+        </div>
+        <div
+          className={`show_icon_logo cursor-pointer mb-2 mt-[20px] px-[12px] pt-[25px] pb-[16px]`}
+        >
+          <IconInstagram />
+        </div>
+        <div className={`grow `}>
           <NavItem
             icon={<IconHome />}
             activeIcon={<IconHomeActive />}
@@ -50,8 +62,8 @@ export default function Sidebar({
             icon={<IconSearch />}
             activeIcon={<IconSearchActive />}
             title="Search"
-            isActive={tabActive === "search"}
-            onClick={() => onClickTab("search")}
+            isActive={false}
+            onClick={toggleSidebar}
           />
           <NavItem
             icon={<IconExplore />}
@@ -110,17 +122,19 @@ export default function Sidebar({
             onClick={() => onClickTab("profile")}
           />
         </div>
+        <div className="mb-6">
+          <NavItem
+            icon={<IconSettings />}
+            activeIcon={<IconSettingsActive />}
+            title="More"
+            isActive={true}
+            onClick={() => console.log("aa")}
+          />
+        </div>
       </div>
-
-      <div className={`mb-6 px-[12px]`}>
-        <NavItem
-          icon={<IconSettings />}
-          activeIcon={<IconSettingsActive />}
-          title="More"
-          isActive={true}
-          onClick={() => console.log("aa")}
-        />
-      </div>
-    </div>
+      {/* <div className={`  sidebar2 ${collapsed ? "collapsed" : ""}`}>
+        <Search />
+      </div> */}
+    </>
   );
 }
